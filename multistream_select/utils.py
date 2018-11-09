@@ -1,6 +1,6 @@
 # returns hex value of a string with its length encoded
 # in the beginning
-
+from pyint import encode
 
 def hexify(payload):
     """
@@ -15,6 +15,7 @@ def hexify(payload):
     payload_length = len(delimited_payload)
     payload_list = [ord(ch) for ch in delimited_payload]
     payload_hex = [format(val, 'x') for val in payload_list]
-    payload_hex = ''.join(payload_hex)
-    len_delimited_payload = hex(payload_length) + payload_hex
+    payload_hex_padded = [val if len(val) > 1 else '0'+val for val in payload_hex]
+    payload_hex_padded = ''.join(payload_hex_padded)
+    len_delimited_payload = "0x" + encode(payload_length, return_type="hex")[0] + payload_hex_padded
     return len_delimited_payload
