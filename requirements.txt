@@ -18,3 +18,4 @@ six==1.11.0
 typed-ast==1.1.0
 wrapt==1.10.11
 yapf==0.24.0
+pyint==1.1.0
