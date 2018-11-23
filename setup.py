@@ -20,7 +20,6 @@ setup(
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
     version='1.0.0',
-
     description='Multistream select',
     long_description=long_description,
 
@@ -65,7 +64,6 @@ setup(
     # simple. Or you can use find_packages().
     packages=find_packages(),
 
-
     # List additional groups of dependencies here (e.g. development
     # dependencies). You can install these using the following syntax,
     # for example:
@@ -74,5 +72,4 @@ setup(
         'dev': ['check-manifest'],
         'test': ['coverage'],
     }
-
 )

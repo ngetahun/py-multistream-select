@@ -1,6 +1,11 @@
-import os
-import multiprocessing
-import io
+import os  # noqa
+import multiprocessing  # noqa
+import io  # noqa
+"""
+    Implements the multistream select protocol multiplexer
+
+    Usage
+"""
 
 
 class MultiStreamSelect(object):
@@ -13,11 +18,12 @@ class MultiStreamSelect(object):
         pass
 
     def add_protocol(self, protocol):
+        # TODO: add more protocol validation
         if not isinstance(protocol, str):
             raise UnknownProtocol(protocol)
 
         if protocol in self.protocols:
-            #raise ArgumentError()
+            # raise ArgumentError()
             pass
 
     @property
