@@ -1,5 +1,7 @@
 # Multistream
 --------------
+[![Build Status](https://travis-ci.org/ngetahun/py-multistream-select.svg?branch=master)](https://travis-ci.org/ngetahun/py-multistream-select.svg?branch=master)
+
 This repository contains the python implementation of the [multistream-select](https://github.com/multiformats/multistream) protocol.
 
 ## Getting started
